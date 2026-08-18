@@ -41,7 +41,9 @@ Cubes are chunked along the spectral axis (256 bands × 1 row × 64 columns), wh
 makes a single wavelength plane cheap to read and the full cube expensive: a
 megapixel map is tens of gigabytes uncompressed. Slice, then compute.
 
-For anything beyond a quick look, use the Hypercube Explorer: it does peak isolation
+For anything beyond a quick look, use the
+[LIBS Hypercube Explorer](https://github.com/Niphargusproject/LIBS_hypercube_explorer):
+it does peak isolation
 with baseline removal, masking, normalization, element ratios, RGB composites,
 k-means clustering and co-registration with a photograph of the sample.
 

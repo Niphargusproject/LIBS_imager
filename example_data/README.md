@@ -25,16 +25,18 @@ so it doubles as a reference for the file format.
 
 ## Trying it out
 
-Download the cube from the Zenodo record into this folder, then:
+Download the cube from the Zenodo record into this folder, then open it with the
+[LIBS Hypercube Explorer](https://github.com/Niphargusproject/LIBS_hypercube_explorer):
 
 ```
-cd ../hypercube_explorer
+git clone https://github.com/Niphargusproject/LIBS_hypercube_explorer.git
+cd LIBS_hypercube_explorer
 python Hypercube_explorer.py
 ```
 
-Open the `.nc` file and follow the tabs from left to right: load, optionally
-co-register a photograph, mask the pixels that are off the sample, normalize, and
-extract maps. `hypercube_explorer/help.html` explains the options.
+Follow the tabs from left to right: load, optionally co-register a photograph, mask
+the pixels that are off the sample, normalize, and extract maps. The `help.html` of
+that repository explains the options.
 
 In Python, without the application:
 

@@ -38,7 +38,6 @@ publication).
 | `cad/` | STEP models of the laser assembly, the mounting and sample-stage adapter plates, the electronics enclosure and the end-stop board |
 | `firmware/` | Arduino sketches of the pulse controller and of the internal controller, and the Grbl_ESP32 settings of the motion controller |
 | `*.py`, `images/`, `launch_LIBS.bat` | the acquisition application, at the top level of the repository; see [`docs/acquisition_app.md`](docs/acquisition_app.md) |
-| `hypercube_explorer/` | snapshot of the post-processing application, whose home is [LIBS_hypercube_explorer](https://github.com/Niphargusproject/LIBS_hypercube_explorer) |
 | `docs/` | file-by-file description of the acquisition application, the cube format, and development notes |
 | `example_data/` | how to get the example cube; the cube itself is too large for GitHub and lives on Zenodo |
 | `bill_of_materials.csv` | bill of materials of the article, semicolon-delimited UTF-8 |
@@ -62,11 +61,13 @@ address in `config.json`, then:
 python app_init.py
 ```
 
-**Post-processing.** No instrument and no proprietary library needed, so this part
-also runs on Linux and macOS:
+**Post-processing.** The cubes are read by the LIBS Hypercube Explorer, which has its
+own repository. It needs no instrument and no proprietary library, so it also runs on
+Linux and macOS:
 
 ```
-cd hypercube_explorer
+git clone https://github.com/Niphargusproject/LIBS_hypercube_explorer.git
+cd LIBS_hypercube_explorer
 pip install -r requirements.txt
 python Hypercube_explorer.py
 ```
