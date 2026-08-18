@@ -1,7 +1,8 @@
 # Schematics
 
-`wiring_trigger_chain.png` is Fig. 7 of the article, at publication resolution. It has
-two panels:
+`wiring_trigger_chain.png` is Fig. 7 of the article, at publication resolution, and
+`wiring_trigger_chain.pdf` is the same drawing on a 180 × 180 mm page for printing. It
+has two panels:
 
 * **(a) the trigger chain.** From the X step output of the MKS DLC32 motion
   controller to the Arduino Uno pulse controller, and from there to the external

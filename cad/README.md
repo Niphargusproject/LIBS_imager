@@ -6,7 +6,7 @@ package that reads STEP (FreeCAD, Fusion 360, SolidWorks, Onshape).
 | File | Content |
 | --- | --- |
 | `Screen_libs_v1_imaging_v2026.step.zip` | the laser assembly: focusing head, dichroic mount, collimators, collection arm, camera, and the plate they are mounted on |
-| `Screen_libs_pulse_controller.step.zip` | enclosure of the electronics, with the motion controller, the pulse controller and the internal controller |
+| `Screen_libs_pulse_controller_box.step.zip` | enclosure of the electronics, with the motion controller, the pulse controller and the internal controller |
 | `Screen_libs_sample_stage_plates.step` | adapter plates between the linear stages and the sample stage |
 | `Screen_libs_Z_mounting_plate.step` | plate that carries the Z stage on the vertical optical breadboard |
 | `End_Stop_Board_libs.step` | end-stop board of the stages |
