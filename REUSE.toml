@@ -1,0 +1,83 @@
+version = 1
+SPDX-PackageName = "LIBS elemental imager"
+SPDX-PackageSupplier = "Christian Burlet <cburlet@naturalsciences.be>"
+SPDX-PackageDownloadLocation = "https://github.com/Niphargusproject/LIBS_imager"
+SPDX-PackageComment = "Per-file licensing of the LIBS elemental imager published in HardwareX. LICENSING.md explains the choices in prose. Later annotations take precedence over earlier ones."
+
+# ---------------------------------------------------------------- firmware and software
+[[annotations]]
+path = [
+    "*.py",
+    "*.bat",
+    "config.json",
+    "requirements.txt",
+    "firmware/pulse_counter_INT0/*.ino",
+    "firmware/Libs_leds_distance_sensor_controller/*.ino",
+    "hypercube_explorer/*.py",
+    "hypercube_explorer/config.json",
+    "hypercube_explorer/requirements.txt",
+]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2021-2026 Royal Belgian Institute of Natural Sciences (Geological Survey of Belgium)"
+SPDX-License-Identifier = "GPL-3.0-only"
+
+# ---------------------------------------------------------------- hardware
+[[annotations]]
+path = ["cad/*.step", "cad/*.step.zip"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2021-2026 Royal Belgian Institute of Natural Sciences (Geological Survey of Belgium)"
+SPDX-License-Identifier = "CERN-OHL-W-2.0"
+
+# ---------------------------------------------------------------- documentation and data
+[[annotations]]
+path = [
+    "*.md",
+    "*.csv",
+    "*.html",
+    "*.cff",
+    ".gitattributes",
+    ".gitignore",
+    ".zenodo.json",
+    "REUSE.toml",
+    "cad/*.md",
+    "docs/*.md",
+    "example_data/*.md",
+    "firmware/*.md",
+    "firmware/*.txt",
+    "hypercube_explorer/*.md",
+    "hypercube_explorer/*.html",
+    "hypercube_explorer/assets/help_*.png",
+    "hypercube_explorer/assets/peak isolation prinicple.png",
+]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2021-2026 Royal Belgian Institute of Natural Sciences (Geological Survey of Belgium)"
+SPDX-License-Identifier = "CC-BY-4.0"
+
+# ---------------------------------------------------------------- third-party icon set
+[[annotations]]
+path = ["images/*.svg"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2013-2017 Cole Bemis (Feather icons)"
+SPDX-License-Identifier = "MIT"
+
+# ---------------------------------------------------------------- proprietary library wrapper
+[[annotations]]
+path = ["avaspec.py", "avaspec_fix_winfunctype.py"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "Avantes BV, adapted by the Royal Belgian Institute of Natural Sciences"
+SPDX-License-Identifier = "LicenseRef-Avantes-SDK"
+
+# ---------------------------------------------------------------- logos and trademarks
+[[annotations]]
+path = [
+    "LOGO-LEAP-RGB-160x90.png",
+    "splash.png",
+    "images/logo.png",
+    "images/splash.png",
+    "images/icon_aconvert.ico",
+    "hypercube_explorer/assets/newlogo_gsb.png",
+    "hypercube_explorer/assets/N-be-logo_complet_png_transparent.png",
+]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "Royal Belgian Institute of Natural Sciences, Geological Survey of Belgium, BELSPO LEAP project"
+SPDX-License-Identifier = "LicenseRef-Logos-Trademarks"

@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Acquisition output: cubes are gigabytes, previews and logs are per-run
+*.nc
+*_progress*.png
+pulse*log*.txt
+
+# Proprietary, install from the vendor instead (see LICENSING.md)
+avaspecx64.dll
+AvaSpec*.pdf
+
+# Machine-specific
+*.lnk
+Thumbs.db
+desktop.ini
+.DS_Store

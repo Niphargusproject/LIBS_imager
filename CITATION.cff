@@ -1,0 +1,100 @@
+cff-version: 1.2.0
+message: "If you use this instrument, its firmware or its software, please cite the article and this repository."
+title: "LIBS elemental imager: design files, firmware and software"
+abstract: >-
+  Design files, firmware and software of a laboratory laser-induced breakdown
+  spectroscopy (LIBS) elemental imager built from low-cost CNC-derived components.
+  The stepper step pulses of the scan axis are counted and divided by an
+  Arduino-based pulse controller that triggers the laser, which in turn triggers six
+  fiber-coupled spectrometers, so that shot spacing is locked to stage position
+  instead of to software timing. A Python/PyQt5 application writes compressed
+  NetCDF4 hyperspectral cubes; a second application turns them into elemental maps.
+type: software
+version: 1.0.0
+date-released: "2026-08-18"
+license: GPL-3.0-only
+license-url: "https://github.com/Niphargusproject/LIBS_imager/blob/main/LICENSING.md"
+repository-code: "https://github.com/Niphargusproject/LIBS_imager"
+keywords:
+  - LIBS
+  - laser-induced breakdown spectroscopy
+  - elemental imaging
+  - hyperspectral imaging
+  - open-source hardware
+  - CNC
+  - Grbl_ESP32
+  - hardware triggering
+authors:
+  - family-names: Burlet
+    given-names: Christian
+    email: cburlet@naturalsciences.be
+    affiliation: "Geological Survey of Belgium, Royal Belgian Institute of Natural Sciences, Brussels, Belgium"
+  - family-names: Bengattat
+    given-names: Soraya
+    affiliation: "Geological Survey of Belgium, Royal Belgian Institute of Natural Sciences, Brussels, Belgium"
+  - family-names: Devleeschouwer
+    given-names: Xavier
+    affiliation: "Geological Survey of Belgium, Royal Belgian Institute of Natural Sciences, Brussels, Belgium"
+  - family-names: Goethals
+    given-names: Herman
+    affiliation: "Geological Survey of Belgium, Royal Belgian Institute of Natural Sciences, Brussels, Belgium"
+  - family-names: Goovaerts
+    given-names: Thomas
+    affiliation: "Geological Survey of Belgium, Royal Belgian Institute of Natural Sciences, Brussels, Belgium"
+  - family-names: Rossi
+    given-names: Mila
+    affiliation: "Faculty of Science, KU Leuven, Leuven, Belgium"
+  - family-names: Stasi
+    given-names: Giorgia
+    affiliation: "Geological Survey of Belgium, Royal Belgian Institute of Natural Sciences, Brussels, Belgium"
+  - family-names: Tovar
+    given-names: Alexandra
+    affiliation: "Geological Survey of Belgium, Royal Belgian Institute of Natural Sciences, Brussels, Belgium"
+  - family-names: Vanbrabant
+    given-names: Yves
+    affiliation: "Geological Survey of Belgium, Royal Belgian Institute of Natural Sciences, Brussels, Belgium"
+  - family-names: Verheyden
+    given-names: Sophie
+    affiliation: "Geological Survey of Belgium, Royal Belgian Institute of Natural Sciences, Brussels, Belgium"
+  - family-names: Barros
+    given-names: Renata
+    affiliation: "EuroGeoSurveys, Brussels, Belgium"
+  - family-names: Nachtergaele
+    given-names: Simon
+    affiliation: "GeMMe, University of Liege, Liege, Belgium"
+  - family-names: Pirard
+    given-names: Eric
+    affiliation: "GeMMe, University of Liege, Liege, Belgium"
+preferred-citation:
+  type: article
+  title: "A Laser-Induced Breakdown Spectroscopy (LIBS) elemental imager built from CNC-derived components with a fully hardware-triggered acquisition chain"
+  journal: HardwareX
+  year: 2026
+  notes: "Submitted; update the DOI once published."
+  authors:
+    - family-names: Burlet
+      given-names: Christian
+    - family-names: Bengattat
+      given-names: Soraya
+    - family-names: Devleeschouwer
+      given-names: Xavier
+    - family-names: Goethals
+      given-names: Herman
+    - family-names: Goovaerts
+      given-names: Thomas
+    - family-names: Rossi
+      given-names: Mila
+    - family-names: Stasi
+      given-names: Giorgia
+    - family-names: Tovar
+      given-names: Alexandra
+    - family-names: Vanbrabant
+      given-names: Yves
+    - family-names: Verheyden
+      given-names: Sophie
+    - family-names: Barros
+      given-names: Renata
+    - family-names: Nachtergaele
+      given-names: Simon
+    - family-names: Pirard
+      given-names: Eric

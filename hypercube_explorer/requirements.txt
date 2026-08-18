@@ -1,0 +1,8 @@
+# LIBS Hypercube Explorer - Python 3.12, runs on Windows, Linux and macOS
+PyQt5>=5.15
+numpy>=1.26
+scipy>=1.11
+pandas>=2.0
+matplotlib>=3.8
+xarray>=2023.1
+netCDF4>=1.6
