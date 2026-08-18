@@ -1,0 +1,30 @@
+Avantes AvaSpec SDK terms (reference)
+
+This is not an open-source license. It records the status of the files that this
+identifier is attached to, so that the licensing of this repository is complete and
+unambiguous.
+
+The files avaspec.py and avaspec_fix_winfunctype.py are a Python ctypes wrapper
+around avaspecx64.dll, the proprietary spectrometer library distributed by Avantes
+BV with the AvaSpec-DLL SDK. The wrapper follows the structure, the function
+signatures and the constant names of the Python example that Avantes ships with that
+SDK, and is therefore treated here as derived from it rather than as original code
+under the GNU GPL.
+
+Consequences:
+
+1. avaspecx64.dll, its header files and the Avantes manual are NOT redistributed in
+   this repository. Obtain them from Avantes together with the spectrometers, and
+   copy avaspecx64.dll next to avaspec.py.
+
+2. Your use of these two files is governed by the license terms you accepted with
+   the Avantes SDK, in addition to any rights the authors of this repository may
+   hold in their own modifications.
+
+3. If you want to reuse the wrapper outside the context of an Avantes spectrometer,
+   or redistribute a modified version, clarify the terms with Avantes first.
+
+Every other Python file in this repository is licensed under GPL-3.0-only, see
+LICENSES/GPL-3.0-only.txt.
+
+Contact: Avantes BV, https://www.avantes.com/

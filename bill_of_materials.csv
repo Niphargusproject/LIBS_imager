@@ -1,0 +1,23 @@
+﻿Designator;Component;Number;Cost per unit (€);Total cost (€);Source of materials;Material type
+Motion;"Ball-screw linear modules, SFU1204 + HGH15 rails, incl. NEMA 23 stepper (HANPOSE HPV6; X, Y, Z)";3;≈60–200 (depending on length);≈400;AliExpress;Metal
+Motion;Makerbase MKS DLC32 controller board (ESP32, Grbl_ESP32);1;30;≈30;AliExpress;Semi-conductor
+Motion;TMC2209 stepper drivers (3×) + 24 V PSU;1 set;≈50;≈50;Mouser;Semi-conductor
+Frame;Aluminum extrusion + brackets;;≈100 (depends on size);≈100;123-3D.nl;Metal
+Trigger;Arduino Uno (pulse controller);1;≈25;≈25;Mouser;Semi-conductor
+Laser assembly;Arduino Nano (internal controller);1;≈25;≈25;Mouser;Semi-conductor
+Laser assembly;Illumination LEDs (micro + macro) + drivers;1;≈20;≈20;Mouser;Semi-conductor
+Laser assembly;Machine-vision camera, Basler pulse USB3 (CS-mount), e.g. puA1920-30uc;1;≈400;≈400;Edmund Optics;Semi-conductor
+Laser assembly;45° longpass dichroic mirror, 950 nm cut-on (Thorlabs DMLP950), in a 45° kinematic cage mount (Thorlabs KC45D1, ≈€230);1;≈600;≈600;Thorlabs;Inorganic
+Laser assembly;Focusing lens, UVFS plano-convex, Ø25.4 mm, f = 50 mm;1;≈60;≈60;Thorlabs;Ceramic
+Laser assembly;30 mm cage plates, rods + mounting bases (Thorlabs CP02 ×3, CP30, ER6 rods ×4, CPB1/M, LCPB1);1 set;≈200;≈200;Thorlabs;Metal
+Laser assembly;Collection optics: trifurcated 600 µm 0.22 NA low-OH fiber + 2 collimators (Ø12.7 mm UVFS plano-convex, f = 50 mm and f = 25 mm);2;≈300;≈600;Ocean Optics;Composite
+Laser assembly;3D-printed focusing head and enclosure parts;≈1kg;≈25 (filament);≈25;printed in-house;Polymer
+Laser assembly;Air pump for the focusing-head overpressure, 0–30 L/min, ≤30 kPa, <40 dB (SCULPFUN Air Assist, 230 V AC);1;≈60;≈60;Amazon;Composite
+Sample holder;Photographic leveling base, ±15° tilt, 20 kg load (ARTCISE LH6);1;≈50;≈50;Amazon;Metal
+Safety;Emergency-stop button, 22 mm, NC, 660 V/10 A;1;≈20;≈20;Amazon;Other
+Extraction;Mobile fume extractor, 235 m³/h, H13 HEPA + 3 kg activated carbon, 130 cm extraction arm (PureAirPro 6001D);1;≈800;≈800;Itec Luchtreiniging;Composite
+Laser;Lumibird/Quantel Viron Nd:YAG 1064 nm;1;≈25,000–30,000 (quote);On quotation;Lumibird;Other
+Spectrometers;"Avantes spectrometers (4× AvaSpec-ULS4096CL-EVO, 1× ULS2048CL-EVO, 1× VRS2048CLIR-EVO; 200–1100 nm)";6;quote (typically ≈5-6,000 per channel, configuration-dependent);On quotation;Avantes;Other
+Acquisition;Industrial 7-port USB 3.0 hub (StarTech), powered;1;≈300;≈300;StarTech.com;Semi-conductor
+Safety;Enclosure frame (aluminum profiles and wood panels), door interlock switch wired to the laser interlock input, warning signage;1;≈300;≈300;Local supplier;Composite
+Total;"Sum of the 19 priced lines above, rounded to ≈€4 100 in the article; the laser and the spectrometers are quoted separately and are not included";;;≈4 065;;

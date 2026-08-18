@@ -1,0 +1,68 @@
+# Grbl_ESP32 settings — LIBS elemental imager
+# Makerbase MKS DLC32 (ESP32) with three TMC2209 drivers at 1/16 microstepping,
+# SFU1204 ball-screw modules (4 mm lead), 200 step/turn motors.
+#
+# Send these lines to the controller over the serial console (115200 baud), then
+# read them back with "$$" and store the answer next to this file. Values marked
+# <TODO> depend on your own mechanics and must be measured on the machine; the
+# comments say how.
+#
+# Axis convention used throughout the article: X is the fast scan axis, Y steps
+# between lines, Z sets the working distance.
+
+# --- resolution -------------------------------------------------------------
+# 200 steps/turn x 16 microsteps / 4 mm lead = 800 steps/mm (1.25 um per microstep).
+# Change only if the screw lead or the microstepping differs.
+$100=800    ; X steps/mm
+$101=800    ; Y steps/mm
+$102=800    ; Z steps/mm
+
+# --- speeds -----------------------------------------------------------------
+# The drivers are undersized with respect to the motors, so the feed is kept low
+# to avoid skipped steps (article Section 7.7). 250 mm/min is the practical
+# ceiling of this build; the mapping feed is computed by the acquisition software
+# from the pitch and the laser repetition rate and is always below it.
+$110=250    ; X max rate (mm/min)
+$111=250    ; Y max rate (mm/min)
+$112=250    ; Z max rate (mm/min)
+
+# --- accelerations ----------------------------------------------------------
+# Must be low enough that no step is skipped at the start and at the end of a
+# line, and that the laser repetition rate stays inside its allowed window
+# (10-20 Hz for the Viron) while the axis ramps up. Start low, increase until
+# the position after a long back-and-forth test no longer drifts, then keep
+# about half of that value.
+$120=<TODO> ; X acceleration (mm/s^2)
+$121=<TODO> ; Y acceleration (mm/s^2)
+$122=<TODO> ; Z acceleration (mm/s^2)
+
+# --- travel and limits ------------------------------------------------------
+# Travel of the modules used here; adapt to your own axes.
+$130=800    ; X max travel (mm)
+$131=400    ; Y max travel (mm)
+$132=200    ; Z max travel (mm)
+$20=1       ; soft limits enabled
+$21=1       ; hard limits enabled (end-stop board, see cad/End_Stop_Board_libs.step)
+$22=1       ; homing cycle enabled
+
+# --- wiring-dependent flags -------------------------------------------------
+# These depend on how the motors and switches are plugged in. Read them from
+# your working machine with "$$" instead of guessing.
+$3=<TODO>   ; direction invert mask
+$4=<TODO>   ; step enable invert
+$5=<TODO>   ; limit pin invert
+$23=<TODO>  ; homing direction invert mask
+$24=<TODO>  ; homing feed (mm/min)
+$25=<TODO>  ; homing seek (mm/min)
+$27=<TODO>  ; homing pull-off (mm)
+
+# --- notes ------------------------------------------------------------------
+# * The step signal of the X axis is tapped on the board and fed to D2 (INT0) of
+#   the Arduino Uno pulse controller, which divides it and triggers the laser.
+#   Any change of $100 therefore changes the shot pitch for a given divider
+#   value, so the acquisition software must be told the same steps/mm value.
+# * Do not enable any "step smoothing" or lookahead option that changes the
+#   number of emitted step pulses: the pixel grid is counted from those pulses.
+# * TMC2209 current is set in the driver configuration of the firmware build;
+#   keep it at the value that the motors tolerate thermally over a full day of
+#   mapping.

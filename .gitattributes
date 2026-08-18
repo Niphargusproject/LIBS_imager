@@ -1,0 +1,11 @@
+* text=auto
+
+# STEP files are text but huge; leave them byte for byte as exported
+*.step -text
+*.step.zip binary
+
+*.png binary
+*.ico binary
+*.pdf binary
+*.dll binary
+*.nc binary

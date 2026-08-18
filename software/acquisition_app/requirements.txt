@@ -1,0 +1,13 @@
+# Fused LIBS acquisition application - Python 3.12, Windows
+# The proprietary Avantes library avaspecx64.dll is not part of this package:
+# copy it from your Avantes installation next to avaspec.py.
+PyQt5>=5.15
+numpy>=1.26
+scipy>=1.11
+pandas>=2.0
+matplotlib>=3.8
+netCDF4>=1.6
+pyserial>=3.5
+opencv-python>=4.8
+# optional, only for the micro-view camera (needs the Basler pylon runtime)
+pypylon>=3.0

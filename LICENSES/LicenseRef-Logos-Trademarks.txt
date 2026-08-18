@@ -1,0 +1,29 @@
+Institutional logos and trademarks (reference)
+
+This is not an open-source license. It records the status of the files that this
+identifier is attached to, so that the licensing of this repository is complete and
+unambiguous.
+
+The files concerned are the logos and splash screens of the Royal Belgian Institute
+of Natural Sciences, of the Geological Survey of Belgium and of the BELSPO BRAIN-be
+LEAP project, and the application icon.
+
+Logos are trademarks and identify their owner. They are not covered by the
+CERN-OHL-W-2.0, GPL-3.0-only or CC-BY-4.0 licenses that apply to the rest of this
+repository, and no trademark rights are granted here.
+
+You may:
+
+* keep them in place when you build and run the applications of this repository
+  unmodified, for your own use.
+
+You may not:
+
+* use them in a way that suggests that the institutions endorse, support or have
+  reviewed your work;
+* keep them in a modified or rebranded distribution of the applications. Replace
+  them with your own artwork instead. The applications look for the files by name,
+  so replacing the image files is enough; no code change is needed.
+
+Requests for permission: Royal Belgian Institute of Natural Sciences,
+Geological Survey of Belgium, Rue Vautier 29, 1000 Brussels, Belgium.

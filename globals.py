@@ -1,9 +1,0 @@
-MAX_NR_DEVICES = 20
-MAX_NR_PIXELS = 4096
-m_StartPixel = [0] * MAX_NR_DEVICES    # used in plot.py
-m_StopPixel = [2047] * MAX_NR_DEVICES  # used in plot.py
-m_Lambda = [[0.0 for x in range(MAX_NR_PIXELS)] for y in range(MAX_NR_DEVICES)]    # used in plot.py
-m_Spectrum = [[0.0 for x in range(MAX_NR_PIXELS)] for y in range(MAX_NR_DEVICES)]  # used in plot.py
-m_GraphicsDisabled = False   # used in plot.py
-m_MinWav = 1.0e4
-m_MaxWav = 0.0
