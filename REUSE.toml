@@ -7,10 +7,10 @@ SPDX-PackageComment = "Per-file licensing of the LIBS elemental imager published
 # ---------------------------------------------------------------- firmware and software
 [[annotations]]
 path = [
-    "*.py",
-    "*.bat",
-    "config.json",
-    "requirements.txt",
+    "software/acquisition_app/*.py",
+    "software/acquisition_app/*.bat",
+    "software/acquisition_app/config.json",
+    "software/acquisition_app/requirements.txt",
     "firmware/pulse_counter_INT0/*.ino",
     "firmware/Libs_leds_distance_sensor_controller/*.ino",
 ]
@@ -20,7 +20,7 @@ SPDX-License-Identifier = "GPL-3.0-only"
 
 # ---------------------------------------------------------------- hardware
 [[annotations]]
-path = ["cad/*.step", "cad/*.step.zip"]
+path = ["cad/*.step", "cad/*.step.zip", "schematics/*.png", "schematics/*.pdf"]
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2021-2026 Royal Belgian Institute of Natural Sciences (Geological Survey of Belgium)"
 SPDX-License-Identifier = "CERN-OHL-W-2.0"
@@ -30,16 +30,18 @@ SPDX-License-Identifier = "CERN-OHL-W-2.0"
 path = [
     "*.md",
     "*.csv",
-    "*.html",
     "*.cff",
     ".gitattributes",
     ".gitignore",
     "REUSE.toml",
     "cad/*.md",
-    "docs/*.md",
     "example_data/*.md",
     "firmware/*.md",
     "firmware/*.txt",
+    "schematics/*.md",
+    "software/*.md",
+    "software/acquisition_app/*.md",
+    "software/acquisition_app/*.html",
 ]
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2021-2026 Royal Belgian Institute of Natural Sciences (Geological Survey of Belgium)"
@@ -47,14 +49,17 @@ SPDX-License-Identifier = "CC-BY-4.0"
 
 # ---------------------------------------------------------------- third-party icon set
 [[annotations]]
-path = ["images/*.svg"]
+path = ["software/acquisition_app/images/*.svg"]
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2013-2017 Cole Bemis (Feather icons)"
 SPDX-License-Identifier = "MIT"
 
 # ---------------------------------------------------------------- proprietary library wrapper
 [[annotations]]
-path = ["avaspec.py", "avaspec_fix_winfunctype.py"]
+path = [
+    "software/acquisition_app/avaspec.py",
+    "software/acquisition_app/avaspec_fix_winfunctype.py",
+]
 precedence = "aggregate"
 SPDX-FileCopyrightText = "Avantes BV, adapted by the Royal Belgian Institute of Natural Sciences"
 SPDX-License-Identifier = "LicenseRef-Avantes-SDK"
@@ -62,11 +67,11 @@ SPDX-License-Identifier = "LicenseRef-Avantes-SDK"
 # ---------------------------------------------------------------- logos and trademarks
 [[annotations]]
 path = [
-    "LOGO-LEAP-RGB-160x90.png",
-    "splash.png",
-    "images/logo.png",
-    "images/splash.png",
-    "images/icon_aconvert.ico",
+    "software/acquisition_app/LOGO-LEAP-RGB-160x90.png",
+    "software/acquisition_app/splash.png",
+    "software/acquisition_app/images/logo.png",
+    "software/acquisition_app/images/splash.png",
+    "software/acquisition_app/images/icon_aconvert.ico",
 ]
 precedence = "aggregate"
 SPDX-FileCopyrightText = "Royal Belgian Institute of Natural Sciences, Geological Survey of Belgium, BELSPO LEAP project"

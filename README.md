@@ -27,18 +27,18 @@ This repository is the reference implementation for the article:
 > HardwareX (submitted).
 
 This repository is the living version of the instrument and is where development
-continues. The frozen state that produced the results in the article, together with
-one measured example data cube, is archived separately on Zenodo (DOI to be added on
-publication).
+continues. The frozen state that produced the results in the article, together with one
+measured example data cube, is archived separately on Zenodo,
+[10.5281/zenodo.21986499](https://doi.org/10.5281/zenodo.21986499).
 
 ## Repository layout
 
 | Path | Content |
 | --- | --- |
 | `cad/` | STEP models of the laser assembly, the mounting and sample-stage adapter plates, the electronics enclosure and the end-stop board |
+| `schematics/` | wiring of the trigger chain and of the internal controller |
 | `firmware/` | Arduino sketches of the pulse controller and of the internal controller, and the Grbl_ESP32 settings of the motion controller |
-| `*.py`, `images/`, `launch_LIBS.bat` | the acquisition application, at the top level of the repository; see [`docs/acquisition_app.md`](docs/acquisition_app.md) |
-| `docs/` | file-by-file description of the acquisition application, the cube format, and development notes |
+| `software/acquisition_app/` | the acquisition application: device control, mapping engine, NetCDF4 cube writer, GUI |
 | `example_data/` | how to get the example cube; the cube itself is too large for GitHub and lives on Zenodo |
 | `bill_of_materials.csv` | bill of materials of the article, semicolon-delimited UTF-8 |
 | `LICENSES/` | full text of every license used here; see [`LICENSING.md`](LICENSING.md) |
@@ -52,12 +52,13 @@ board and check it with `$$`. Keep the trigger cable disconnected from the laser
 while testing. `firmware/README.md` documents the pin assignment and the serial
 command sets.
 
-**Acquisition.** Windows, Python 3.12, `pip install -r requirements.txt`. The
-proprietary Avantes `avaspecx64.dll` is not redistributed here: copy it from your
-Avantes installation next to `avaspec.py`. Set the serial ports and the laser IP
-address in `config.json`, then:
+**Acquisition.** Windows, Python 3.12. The proprietary Avantes `avaspecx64.dll` is not
+redistributed here: copy it from your Avantes installation next to `avaspec.py`. Set
+the serial ports and the laser IP address in `config.json`, then:
 
 ```
+cd software/acquisition_app
+pip install -r requirements.txt
 python app_init.py
 ```
 
@@ -72,10 +73,10 @@ pip install -r requirements.txt
 python Hypercube_explorer.py
 ```
 
-Output is one NetCDF4 file per map, `{stem}_{timestamp}.nc`, plus progress PNGs and
-a pulse-count log. [`docs/cube_format.md`](docs/cube_format.md) describes the file
-layout, and `example_data/README.md` explains how to fetch a real cube to try the
-chain on.
+Output is one NetCDF4 file per map, `{stem}_{timestamp}.nc`, plus progress PNGs and a
+pulse-count log. [`software/README.md`](software/README.md) describes the file layout,
+and [`example_data/README.md`](example_data/README.md) explains how to fetch a real
+cube to try the chain on.
 
 ## Safety
 
@@ -93,7 +94,7 @@ assessment.
 | Hardware, i.e. everything in `cad/` | CERN-OHL-W-2.0 |
 | Firmware and software | GPL-3.0-only |
 | Documentation, tables and data | CC-BY-4.0 |
-| Third-party icons in `images/` | MIT (Feather, Cole Bemis) |
+| Third-party icons in `software/acquisition_app/images/` | MIT (Feather, Cole Bemis) |
 | Institutional logos and splash screens | not covered, see [`LICENSING.md`](LICENSING.md) |
 | `avaspec.py`, `avaspec_fix_winfunctype.py` | Avantes SDK terms, see [`LICENSING.md`](LICENSING.md) |
 

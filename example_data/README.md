@@ -4,7 +4,7 @@ The example cube is **not in this repository**: it is 1.35 GB, well over what Gi
 accepts. It is archived on Zenodo with the rest of the design package, under
 CC-BY-4.0.
 
-> `Vedrin_01_0.2mm.nc` — Zenodo DOI to be added on publication
+> `Vedrin_01_0.2mm.nc` in [10.5281/zenodo.21986499](https://doi.org/10.5281/zenodo.21986499)
 
 ## What it is
 
@@ -21,7 +21,7 @@ so it doubles as a reference for the file format.
 | Detection | integration time 0.01 ms, delay after trigger 3 µs, 1 accumulation per pixel |
 | File size | 1.35 GB compressed, 2.46 GB uncompressed |
 
-`docs/cube_format.md` describes the layout of the file.
+`../software/README.md` describes the layout of the file.
 
 ## Trying it out
 

@@ -14,10 +14,10 @@ the per-file declarations below.
 
 | Files | SPDX identifier | Why |
 | --- | --- | --- |
-| `cad/**` | `CERN-OHL-W-2.0` | CERN Open Hardware License, weakly reciprocal: the usual choice for open hardware, and the one recommended for HardwareX design files |
-| `*.py`, `firmware/**/*.ino`, `launch_LIBS.bat`, `config.json`, `requirements.txt` | `GPL-3.0-only` | the license the application was released under |
-| `*.md`, `docs/**`, `*.html`, `bill_of_materials.csv`, `firmware/Grbl_ESP32_configuration.txt`, help figures | `CC-BY-4.0` | documentation and tabular data, reusable with attribution |
-| `images/*.svg` | `MIT` | Feather icon set, © 2013–2017 Cole Bemis |
+| `cad/**`, `schematics/*.png` | `CERN-OHL-W-2.0` | CERN Open Hardware License, weakly reciprocal: the usual choice for open hardware, and the one recommended for HardwareX design files |
+| `software/acquisition_app/*.py`, `firmware/**/*.ino`, `launch_LIBS.bat`, `config.json`, `requirements.txt` | `GPL-3.0-only` | the license the application was released under |
+| `*.md`, `*.html`, `bill_of_materials.csv`, `firmware/Grbl_ESP32_configuration.txt` | `CC-BY-4.0` | documentation and tabular data, reusable with attribution |
+| `software/acquisition_app/images/*.svg` | `MIT` | Feather icon set, © 2013–2017 Cole Bemis |
 | `avaspec.py`, `avaspec_fix_winfunctype.py` | `LicenseRef-Avantes-SDK` | wrapper for a proprietary library, see below |
 | logos, splash screens, `images/icon_aconvert.ico` | `LicenseRef-Logos-Trademarks` | institutional logos are trademarks, see below |
 
@@ -39,8 +39,9 @@ SDK. Neither the DLL nor the Avantes manual is redistributed in this repository:
 install the SDK from Avantes and copy `avaspecx64.dll` next to `avaspec.py`. If you
 want to reuse the wrapper in another project, clarify the terms with Avantes first.
 
-**Logos and splash screens.** `LOGO-LEAP-RGB-160x90.png`, `splash.png`,
-`images/logo.png`, `images/splash.png` and `images/icon_aconvert.ico` carry the marks
+**Logos and splash screens.** In `software/acquisition_app/`, the files
+`LOGO-LEAP-RGB-160x90.png`, `splash.png`, `images/logo.png`, `images/splash.png` and
+`images/icon_aconvert.ico` carry the marks
 of the Royal Belgian Institute of Natural Sciences, the Geological Survey of Belgium
 and the BELSPO LEAP project. Trademarks are not licensed by CC-BY or the GPL. You
 may keep them when you run the application as it is, but replace them with your own
