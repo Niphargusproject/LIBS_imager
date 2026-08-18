@@ -37,7 +37,6 @@ path = [
     "*.cff",
     ".gitattributes",
     ".gitignore",
-    ".zenodo.json",
     "REUSE.toml",
     "cad/*.md",
     "docs/*.md",

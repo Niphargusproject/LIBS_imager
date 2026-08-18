@@ -26,8 +26,10 @@ This repository is the reference implementation for the article:
 > from CNC-derived components with a fully hardware-triggered acquisition chain.*
 > HardwareX (submitted).
 
-The version that produced the results in the article is archived on Zenodo
-(DOI to be added on publication), together with one measured example data cube.
+This repository is the living version of the instrument and is where development
+continues. The frozen state that produced the results in the article, together with
+one measured example data cube, is archived separately on Zenodo (DOI to be added on
+publication).
 
 ## Repository layout
 
