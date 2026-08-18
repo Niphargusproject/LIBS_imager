@@ -25,8 +25,8 @@ co-registration with a photograph of the sample.
 | `test_full_hardware.py` | end-to-end check of laser, motion, pulse controller and spectrometers |
 | `test_spectrometer_stress.py` | spectrometer-only soak test, no laser and no motion |
 | `help.html` | in-application manual: parameters, file layout, fault recovery |
-| `launch_LIBS.bat` | Windows launcher |
 | `Bruniquel_LIBS_improved.py` | earlier single-file version, kept for reference |
+| `launch_LIBS.bat` | Windows launcher: activates the conda base environment and starts the single-file version above |
 | `mapping_flowchart.md`, `LIBS_mapping_paper.md` | development notes on the scan loop and the mapping logic |
 
 ## Requirements
@@ -47,8 +47,7 @@ cd acquisition_app
 python app_init.py
 ```
 
-or double-click `launch_LIBS.bat`. Section 6 of the article gives the operating
-procedure.
+Section 6 of the article gives the operating procedure.
 
 Two habits are worth keeping. Run `test_full_hardware.py` after any rewiring, before
 putting a sample in. And watch the pulse count that the application compares with the
